@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронирование | LuxRestaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="booking.html" style="color: #d4af37;">Бронирование</a>
+        <a href="menu.html">Меню</a>
+    </nav>
+
+    <div class="booking-container">
+        <h1 class="title" style="opacity: 1; transform: none; margin-bottom: 40px;">Ваш Стол Ожидает</h1>
+        
+        <div class="booking-form">
+            <form>
+                <div class="form-group">
+                    <label>Имя</label>
+                    <input type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group">
+                    <label>Выбор зоны</label>
+                    <select>
+                        <option>Основной зал</option>
+                        <option>VIP комната</option>
+                        <option>Панорамная терраса</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Дата и время</label>
+                    <input type="datetime-local">
+                </div>
+                <button type="submit" class="submit-btn">ЗАБРОНИРОВАТЬ</button>
+            </form>
+            <p style="text-align: center; font-size: 0.7rem; color: #666; margin-top: 20px;">
+                Подсказка: Используйте стрелки ← → для изменения стиля формы
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
